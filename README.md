@@ -7,7 +7,7 @@
 
 <body>
  <div id="chart_div"></div>
- <script type="text/javascript">
+ <script type="text/javascript"></script>
   google.charts.load('current',{'packages':['corechart']}};
   google.charts.setOnLoadCallback(drawChart);
 </body>
