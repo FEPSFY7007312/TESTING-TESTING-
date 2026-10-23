@@ -6,13 +6,14 @@
 </head>
 
 <body>
-  <div id="chart_div"></div>
+  <div id="pie_div"></div>
+  <div id="scatter_chart"></div>
 
   <script type="text/javascript">
     google.charts.load('current', { 'packages': ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
+    function drawPieChart() {
       var data = google.visualization.arrayToDataTable([
         ['Task', 'Hours per Day'],
         ['Work', 8],
@@ -32,7 +33,7 @@
   </script>
 
 <script type="text/javascript">
-function drawChart() {
+function drawScatterChart() {
 var data = new google.visualization.DataTable()
 data.addColumn('number', 'Age');
 data.addColumn('number', 'Salary');
